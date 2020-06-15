@@ -1,5 +1,4 @@
 import sqlite3
-import random
 
 # Path and opening database
 db_path = "database/fifa2019_players.db"
@@ -40,9 +39,6 @@ print(rows[0])
 
 # So if we wanted to retrieve the name of the first player, for example, we would do the following:
 print(rows[0][0]) # because the Name field is the first element of the tuple
-
-# NOTE: if we just want to retrieve specific fields, we could use the following, for instance:
-# SELECT Name, Age FROM players WHERE Nationality = 'Spain' // when fetching it, each row will contain just 2 elements in the tuple instead of 10
 
 # Closing database connection
 cur.close()

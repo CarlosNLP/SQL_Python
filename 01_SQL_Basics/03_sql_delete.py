@@ -1,5 +1,4 @@
 import sqlite3
-import random
 
 # Path and opening database
 db_path = "database/fifa2019_players.db"
